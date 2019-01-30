@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Camila Miranda",
+      "username": "camimiranda",
+      "email": "camimiranda95@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "name": "Yato Taus",
+      "username": "yatotaus",
+      "email": "yatotaus@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "name": "Manuel Rigonat",
+      "username": "manurigonat",
+      "email": "manurigonat@gmail.com",
+      "password": "1234"
+    },
+    {
+        "id": 4,
+        "name": "Fran Segarra",
+        "username": "fransegarra",
+        "email": "fransegarra@gmail.com",
+        "password": "1234"
+    }
+  ]
+}

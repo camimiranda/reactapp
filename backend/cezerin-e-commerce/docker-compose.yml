@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  app:
+    image: cezerin/cezerin
+    environment:
+      - DB_HOST=db
+      - DB_PORT=27017
+      - DB_NAME=shop
+      - DB_USER=
+      - DB_PASS=
+    ports:
+      - 3000:80
+      - 3001:3001
+    volumes:
+      - /home/camila.miranda/my-app/cezerin-e-commerce/src:/var/www/cezerin
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    image: mongo
+    ports:
+      - 27017
+    volumes:
+      - /var/www/db-on-host:/data/db
+    restart: always

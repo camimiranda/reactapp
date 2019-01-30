@@ -1,0 +1,26 @@
+
+{
+    "images":[
+        {
+           "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbFBNAjSZhydJvtUxxlhrm9qyaJ5cYyapybIW10NBPGVEY0CKxQ",
+           "title": "women"
+        },
+        {
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7xdYoM0UU7TMmJypwL7Vm9C4AyEuZNkRhMfWt-rHxZZKCj1Ah",
+            "title": "men"
+        },
+        {
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSOhobNDfjQyhg4qt6zFM9qFcZRaYK13CRDPTshYdjOSwplpRT",
+            "title": "kids"
+        }
+       
+    ],
+    "portada": [
+        {
+            "img":"https://www.forever21.com/images/f21/us/en/web/20190114/01.14_WGA-desktop_M1.jpg?1",
+            "title": "forever21"
+        }
+    ]
+}
+  
+
