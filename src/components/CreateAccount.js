@@ -6,10 +6,10 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
-import InputPink from "./InputPink";
 import pink from "@material-ui/core/colors/pink";
-import "./Login.css";
+import "../containers/Login.css";
 import UserService from "../services/User.service";
+import CreateAccountForm from './CreateAccountForm';
 
 const styles = theme => ({
   root: {
@@ -39,9 +39,7 @@ const styles = theme => ({
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
     backgroundSize: "cover",
-    height: "100%",
-    backgroundImage:
-      "url(https://cdn.pixabay.com/photo/2018/02/02/23/27/office-3126597_960_720.jpg)"
+    height: "100%"
   },
   textField: {
     marginLeft: theme.spacing.unit,
@@ -117,7 +115,7 @@ class CreateAccountComponent extends Component {
 
   onSubmit() {
     if (
-      this.state.username !== "" &&
+      this.state.username.isEmp &&
       this.state.confirmPassword !== "" &&
       this.state.password !== "" &&
       this.state.email !== "" &&
@@ -132,7 +130,6 @@ class CreateAccountComponent extends Component {
           this.state.email
         );
         if (userExists === "Registered") {
-          
           this.props.history.push("/login");
         } else {
           console.error("Couldn't register user");
@@ -149,51 +146,19 @@ class CreateAccountComponent extends Component {
   
   render() {
     const { classes } = this.props;
-    let className = "button-signin";
     return (
       <Layout>
         <div className={classes.container}>
           <Card className={classes.card}>
             <CardContent>
-              <div className={classes.header}>
-                <h1>Create your Account</h1>
-              </div>
-              <form 
-               onSubmit={this.onSubmit}
-                className={classes.formContainer}
-                autoComplete="off"
-              >
-                <InputPink
-                  type="text"
-                  label="Full Name"
-                  onChange={this.onChangeFullName}
-                  value= {this.state.fullName}
-                />
-                <InputPink
-                  type="text"
-                  label="Username"
-                  onChange={this.onChangeUsername}
-                  value={this.state.username}
-                />
-                <InputPink
-                  type="text"
-                  label="E-mail"
-                  onChange={this.onChangeEmail}
-                  value={this.state.email}
-                />
-                <InputPink
-                  label="Password"
-                  type="password"
-                  onChange={this.onChangePassword}
-                  value= {this.state.password}
-                />
-                <InputPink
-                  label="Confirm Password"
-                  type="password"
-                  onChange={this.onChangeConfirmPassword}
-                  value={this.state.confirmPassword}
-                />
-              </form>
+             <CreateAccountForm
+             onSubmit={this.onSubmit}
+             onChangeFullName={this.onChangeFullName}
+             onChangeUsername={this.onChangeUsername}
+             onChangeEmail={this.onChangeEmail}
+             onChangePassword={this.onChangePassword}
+             onChangeConfirmPassword={this.onChangeConfirmPassword}
+             />
             </CardContent>
             <CardActions>
               <Button 

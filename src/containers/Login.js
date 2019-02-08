@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Layout from "./Layout";
+import Layout from "../components/Layout";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -8,10 +8,10 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 import UserService from "../services/User.service";
-import InputPink from "./InputPink";
+import InputPink from "../components/InputPink";
 import pink from '@material-ui/core/colors/pink';
 
-import "./Login.css";
+// import "./Login.css";
 
 const styles = theme => ({
   formContainer: {
@@ -54,6 +54,11 @@ const styles = theme => ({
   }, 
   font: {
     fontFamily: "Raleway"
+  },
+  header: {
+      borderBottom: "2px solid",
+      paddingBottom: "0em",
+      borderBottomColor: pink[600]
   }
 });
 
@@ -104,11 +109,11 @@ class LoginComponent extends Component {
         <div className={classes.container}>
           <Card className={classes.card}>
             <CardContent>
-              <h1>Sign In</h1>
+              <h1 className={classes.header}>Sign In</h1>
               <form className={classes.formContainer} autoComplete="off">
                 <InputPink
                   label="Username"
-                  type=""
+                  type="text"
                   onChange={this.updateUsernameInput}
 
                 />

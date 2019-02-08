@@ -5,7 +5,7 @@ import Card from "@material-ui/core/Card";
 import Grid from "@material-ui/core/Grid";
 import CardMedia from "@material-ui/core/CardMedia";
 import DataService from "../services/Data.service";
-import ProducGridList from './ProductGridList';
+import Footer from './Footer/Footer';
 
 const styles = theme => ({
   root: {
@@ -74,8 +74,10 @@ class Home extends Component {
             ))}
           </Grid>
           </div>
-          <ProducGridList/>
+          {/* <ProductGridList/> */}
+          <Footer/>
         </div>
+        
       );
   }
 }

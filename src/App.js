@@ -1,14 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'; 
+import { Router, Route, Switch } from 'react-router-dom'; 
 import './App.css';
 import HomeView from './views/HomeView';
-import Login from './components/Login';
+import Login from './containers/Login';
 import CreateAccount from './components/CreateAccount';
 import ForgotPassword from './components/ForgotPassword';
 import history from './services/History';
+import ProductGridList from './containers/ProductGridList';
 
 const App =() => (
-      <BrowserRouter history={history}>
+      <Router history={history}>
         <Switch>
           <Route exact path="/" component={HomeView}/>  
           <Route path="/login" component={Login}/>
@@ -16,9 +17,8 @@ const App =() => (
           <Route path="/products/women" component={ProductGridList}/>
           <Route path="/create-account" component={CreateAccount}/>
           <Route path="/forgot-password" component={ForgotPassword}/>
-          <Route path="/todo" component={Todo}/>
         </Switch>
-        </BrowserRouter>
+        </Router>
     );
   
 export default App;

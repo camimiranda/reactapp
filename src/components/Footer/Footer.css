@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body {
+    font-family: 'Lato', sans-serif;
+    background: #322f30;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+
+li{
+    margin: 50px;
+    list-style-type: none;
+}
+
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+    color: white;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 90%;
+    display: flex;
+    border-top: 2px solid;
+    margin: 80px;
+    justify-content: space-evenly;
+}
+.social-icon {
+    color:rgb(192, 188, 189);
+    
+}
+ul.social-icons {
+    margin-top: 50px;
+    position: absolute;
+
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    justify-content: center;
+
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    font-size: 50px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+    border-radius: 20px;
+}
+.fa-instagram {
+    padding:10px 14px;
+    font-size: 50px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-instagram:hover{
+    background-color:rgb(255, 20, 90);
+    border-radius: 20px;
+}
+.fa-twitter {
+    padding:10px 12px;
+    font-size: 50px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-twitter:hover {
+    background-color: #00aced;
+    border-radius: 20px;
+}
+
+.fa-youtube {
+    padding:10px 14px;
+    font-size: 50px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+    border-radius: 20px;
+}

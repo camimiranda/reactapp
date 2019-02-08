@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ProductCard from "./ProductCard";
+import ProductCard from "../components/ProductCard";
 import Grid from "@material-ui/core/Grid";
 
 class ProductGridList extends Component {
@@ -12,13 +12,13 @@ class ProductGridList extends Component {
       ));
   }
 
-  componentDidMount(){
-    console.log(this.props.match.params.gender)
-  }
+  // componentDidMount(){
+  //   console.log(this.props.match.params.gender)
+  // }
 
-  thereAreProducts() {
-    return this.props.products.length > 0;
-  }
+  // thereAreProducts() {
+  //   return this.props.products.length > 0;
+  // }
 
   render() {
     return (
@@ -28,7 +28,7 @@ class ProductGridList extends Component {
           justify="center"
           alignItems="center"
         >
-        {this.thereAreProducts() ? this.listProducts() : "No products!"}
+        {/* {this.thereAreProducts() ? this.listProducts() : "No products!"} */}
         {this.props.showLoader ? "Cargando productos..." : "We couldn't find any products"}
       </Grid>
     );
