@@ -9,11 +9,12 @@ import Footer from './Footer/Footer';
 
 const styles = theme => ({
   root: {
+    background: "#322f30",
     flexGrow: 1,
     flexWrap: "wrap",
     width: "auto",
     height: "auto",
-   padding: "2em 2em"
+    padding: "2em 2em"
   },
 
   media: {

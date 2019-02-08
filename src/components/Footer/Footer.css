@@ -1,18 +1,18 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
+
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-body {
+/* body {
     font-family: 'Lato', sans-serif;
-    background: #322f30;
+   
     -webkit-font-smoothing: antialiased;
-}
-a {
+} */
+/* a {
     text-decoration: none;
     color: #fff;
 }
 p > a:hover{
     color: #d9d9d9;
     text-decoration:  underline;
-}
+} */
 h1,
 h2,
 h3,
@@ -39,7 +39,6 @@ ul {
     list-style: none;
 }
 .footer-social-icons {
-    width: 90%;
     display: flex;
     border-top: 2px solid;
     margin: 80px;

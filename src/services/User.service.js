@@ -1,4 +1,4 @@
-import User from "./User.json";
+import User from "./Data/User.json";
 
 class UserService {
   getUserById(id) {

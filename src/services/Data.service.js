@@ -1,4 +1,4 @@
-import tileData from '../components/tileData.json';
+import tileData from './Data/tileData.json';
 
 export default class DataService {
 

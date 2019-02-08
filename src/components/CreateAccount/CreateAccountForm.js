@@ -1,5 +1,5 @@
 import React from 'react';
-import InputPink from './InputPink';
+import InputPink from '../InputPink';
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import pink from "@material-ui/core/colors/pink";

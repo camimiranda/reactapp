@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -7,11 +7,10 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
-import UserService from "../services/User.service";
-import InputPink from "../components/InputPink";
+import UserService from "../../services/User.service";
+import InputPink from "../../components/InputPink";
 import pink from '@material-ui/core/colors/pink';
 
-// import "./Login.css";
 
 const styles = theme => ({
   formContainer: {
